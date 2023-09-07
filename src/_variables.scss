@@ -1,0 +1,21 @@
+//imports
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+// theme colors
+$primary-color: #393E46;
+$secondary-color: rgba(0, 0, 0, 0.41);
+
+
+//text-colors
+$main-color-1: rgba(255, 255, 255, 0.80);
+$main-color-2: rgba(231, 177, 10, 0.8);
+
+//text-fonts
+$fira-code:'Fira Code', monospace;
+
+//paddings
+$padding-all:clamp(1rem, -0.24593rem + 5.246vw, 5rem);
+$padding-right:clamp(1rem, -0.24593rem + 5.246vw, 5rem);
+$padding-left: clamp(1rem, -0.24593rem + 5.246vw, 5rem);
+$padding-top: clamp(1rem, -0.24593rem + 5.246vw, 5rem);
+$padding-bottom: clamp(1rem, -0.24593rem + 5.246vw, 5rem);

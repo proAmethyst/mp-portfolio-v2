@@ -1,0 +1,73 @@
+@import './src/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    background-color: rgba(57, 62, 70, 1);
+    position: sticky;
+    z-index: 999;
+    top:0;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: $padding-right;
+    padding-left: $padding-left;
+    
+    .wrapper{
+
+
+        .buttons{
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            gap: 17.7vw;
+
+            .link-btn{
+                color: rgba(238, 238, 238, 0.8);
+                font-family: $fira-code;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+                font-weight: 300;
+                letter-spacing: 3.60px;
+                transition: 0.2s all ease-in-out;
+                
+
+                &:hover{
+                    color:rgba(231, 177, 10, 1);
+                    cursor: pointer;
+                    transition: 0.2s all ease-in-out;
+                }
+            }
+            
+        }
+    }
+}
+
+.scroll{
+    background-color: rgba(57, 62, 70, 0.5);
+    transition: 0.2s all ease-in-out;
+}
+
+
+@media only screen and (max-width: 600px){
+    .navigation{
+        justify-content: center;
+        background-color: rgba(4,4,5,1);
+    }
+    
+    .scroll{
+        background-color: rgba(4,4,5,0.8);
+    }
+
+}
