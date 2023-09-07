@@ -252,8 +252,8 @@ const Frontpage = () => {
         <div className="info-box">
           <div className="left-side">
             <div className="info-pers name">Profir Mihai</div>
-            <div className="info-pers tel">+40 752 926 821</div>
-            <div className="info-pers email">profirmihai96@gmail.com</div>
+            <div className="info-pers tel">+40 xxx xxx xxx</div>
+            <div className="info-pers email">pxxxxxxxxx@gmail.com</div>
 
             <a href="https://www.github.com/proAmethyst" className="social-link">
               <div className="info-pers site">github.com/proAmethyst</div>
