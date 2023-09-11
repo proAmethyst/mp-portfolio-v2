@@ -1,0 +1,46 @@
+@import './src/variables.scss';
+@import './src/animations.scss';
+
+
+// WORK PREVIEW
+.work{
+    padding: $padding-all;
+    background-color: $secondary-color;
+    text-align: center;
+
+    .title-box{
+        padding: 2rem;
+        font-family: $fira-code;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        
+        .upper-title{
+            letter-spacing: 6px;
+            color: $main-color-2;
+            font-size: 1rem;
+            font-size: clamp(0.5rem, 0rem + 3vw, 1.3rem);
+        }
+
+        .title{
+            font-size: 1rem;
+            font-size: clamp(2rem, 0rem + 5vw, 2.5rem);
+            letter-spacing: 9px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .work{
+        .title-box{
+            .upper-title{
+                letter-spacing: 2px;
+            }
+
+            .title{
+                letter-spacing: 3px;
+            }
+        }
+    }
+}

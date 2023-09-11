@@ -1,0 +1,100 @@
+@import './src/variables.scss';
+@import './src/animations.scss';
+
+// FOOTER
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $fira-code;
+    padding-top: $padding-top;
+    gap: 4rem;
+
+    .contact-us-text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .upper-title{
+            letter-spacing: 6px;
+            color: $main-color-2;
+            font-size: 1rem;
+            font-size: clamp(0.5rem, 0rem + 3vw, 1.3rem);
+        }
+
+        .title{
+            font-size: 1rem;
+            font-size: clamp(2rem, 0rem + 5vw, 2.5rem);
+            letter-spacing: 9px;
+            text-transform: uppercase;
+        }
+
+        .subtitle{
+            letter-spacing: 9px;
+            color: $main-color-1;
+            font-size: 1rem;
+            font-size: clamp(0.5rem, 0rem + 3vw, 1.3rem);
+        }
+    }
+
+    .info-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $secondary-color;
+        padding: $padding-all;
+        
+        .left-side{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            a{
+                color:$main-color-1;
+            }
+        }
+
+        .right-side{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: end;
+        }
+    }
+}
+
+// ANOTHER SIZERS , RESPONSIVE.
+
+@media only screen and (max-width: 510px){
+
+    .footer{
+        .contact-us-text{
+            .upper-title{
+                letter-spacing: 2px;
+            }
+
+            .title{
+                letter-spacing: 3px;
+            }
+
+            .subtitle{
+                letter-spacing: 2px;
+            }
+        }
+        .info-box{
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            text-align: center;
+            .right-side{
+                text-align: center;
+            }
+
+        }
+    }
+
+}

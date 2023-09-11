@@ -1,0 +1,148 @@
+@import './src/variables.scss';
+@import './src/animations.scss';
+
+.abilities{
+    font-family: $fira-code;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-all;
+
+    .title-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .upper-subtitle{
+            letter-spacing: 9px;
+            color: $main-color-2;
+            font-size: 1rem;
+            font-size: clamp(0.5rem, 0rem + 3vw, 1.3rem);
+        }
+
+        .title{
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-size: clamp(2rem, 0rem + 5vw, 2.5rem);
+            letter-spacing: 9px;
+        }
+
+        .under-subtitle{
+            padding: 4rem;
+            font-size: 1rem;
+            font-size: clamp(0.5rem, 0rem + 3vw, 1.3rem);
+        }
+    }
+
+    .skills-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding-bottom: $padding-bottom;
+
+        .wrapper-test{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .skill{
+                height: 18rem;
+                width: 18rem;
+                border: 1px solid $main-color-2;
+                background: $secondary-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 2rem;
+
+            }
+
+            .skill-text{
+                transform: rotate(0deg) !important;
+            }
+
+            .short-description{
+                color:$main-color-2;
+            }
+        }
+    }
+
+    .button-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .find-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $main-color-1;
+            font-weight: 300;
+            font-size: 1.2rem;
+            width: 14.35rem;
+            height:4.37rem;
+            cursor: pointer;
+            background-color: $secondary-color;
+            border: 1px solid $main-color-1;
+            transition: 0.2s all ease-in-out;
+
+            svg{
+                path{
+                    transition: 0.2s all ease-in-out;
+                }
+            }
+
+            &:hover{
+                transition: 0.2s all ease-in-out;
+                border: 1px solid $main-color-2;
+                color: $main-color-2;
+
+                svg{
+                    path{
+                        transition: 0.2s all ease-in-out;
+                        stroke: $main-color-2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.flip-horizontal-top {
+	-webkit-animation: flip-horizontal-top 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-horizontal-top 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+// ANOTHER SIZERS , RESPONSIVE.
+
+@media only screen and (max-width: 510px){
+    .abilities {
+        .title-box{
+            .upper-subtitle{
+                letter-spacing: 2px;
+            }
+
+            .title{
+                letter-spacing: 3px;
+            }
+        }
+        
+        .button-box {
+            .find-more{
+                font-size: 0.9rem;
+                width: 9.35rem;
+                height:2.37rem;
+            }
+        }
+    }
+}

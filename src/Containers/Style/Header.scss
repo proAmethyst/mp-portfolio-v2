@@ -1,0 +1,153 @@
+@import "./src/variables.scss";
+@import "./src/animations.scss";
+
+.home {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  background-color: $primary-color;
+  background-image: url(../../Assets/hpbackground.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  background-blend-mode: lighten;
+  font-family: $fira-code;
+
+  .text-box {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .main-title-1,
+  .main-title-2 {
+    font-size: 1rem;
+    font-size: clamp(3rem, 0rem + 5vw, 6rem);
+    font-weight: 300;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+  }
+
+  .main-title-1 {
+    color: $main-color-1;
+  }
+
+  .main-title-2 {
+    color: $main-color-2;
+    letter-spacing: 9.6px;
+  }
+
+  .subtitle {
+    color: $main-color-1;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    font-weight: 300;
+    letter-spacing: 4.8px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+  }
+
+  .social-box {
+    .social-media {
+      display: flex;
+      flex-direction: row;
+      gap: 17.7vw;
+      padding: 2rem 0;
+
+      img {
+        transition: 0.2s all ease-in-out;
+
+        &:hover {
+          transition: 0.2s all ease-in-out;
+          filter: invert(54%) sepia(86%) saturate(420%) hue-rotate(8deg)
+            brightness(106%) contrast(107%);
+        }
+      }
+    }
+  }
+  .buffer1,
+  .buffer2 {
+    height: 6vh;
+  }
+}
+
+// ANOTHER SIZERS , RESPONSIVE.
+
+@media only screen and (max-width: 1096px) {
+  .home {
+    .text-box {
+      padding-top: 13rem;
+      padding-bottom: 13rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    background-image: url(../../Assets/another.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-blend-mode: multiply;
+    .text-box {
+      padding-top: 13rem;
+      padding-bottom: 13rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main-title-2 {
+      letter-spacing: 5px;
+    }
+
+    .social-box {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .home {
+    .text-box {
+      padding-top: 12.5rem;
+      padding-bottom: 12.5rem;
+    }
+    .main-title-1,
+    .main-title-2 {
+      font-size: 2.3rem;
+    }
+    .subtitle {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .home {
+    .text-box {
+      padding-top: 13rem;
+      padding-bottom: 13rem;
+    }
+    .main-title-1,
+    .main-title-2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .home {
+    .text-box {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+    .main-title-1,
+    .main-title-2 {
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .subtitle {
+      word-wrap: break-word;
+      text-align: center;
+    }
+  }
+}

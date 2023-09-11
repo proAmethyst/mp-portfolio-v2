@@ -1,0 +1,146 @@
+@import "./src/variables.scss";
+@import "./src/animations.scss";
+
+.about {
+  font-family: $fira-code;
+  background: $secondary-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-all;
+  gap: 4rem;
+
+  .avatar-box {
+    border: 2px solid $main-color-2;
+
+    .design-square {
+      position: relative;
+      background-color: $primary-color;
+      width: 45vw;
+      height: 45vw;
+
+      .avatar {
+        position: absolute;
+        border: 2px solid $main-color-2;
+        top: 2rem;
+        left: 2rem;
+
+        img {
+          width: 45vw;
+          height: 45vw;
+        }
+      }
+    }
+  }
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    padding-top: 1.7rem;
+    hr {
+      border: 1px solid $main-color-2;
+      width: 100%;
+    }
+
+    .title-box {
+      font-size: 1rem;
+      font-size: clamp(2rem, 0rem + 5vw, 3.4rem);
+      color: $main-color-2;
+      text-transform: uppercase;
+      letter-spacing: 9.6px;
+      font-weight: 300;
+    }
+
+    .content-box {
+      text-align: justify;
+      font-weight: 300;
+      font-size: 1rem;
+      font-size: clamp(0.5rem, 0rem + 3vw, 1.2rem);
+    }
+
+    .button-box {
+      .see-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main-color-1;
+        font-weight: 300;
+        font-size: 1.2rem;
+        width: 14.35rem;
+        height: 4.37rem;
+        cursor: pointer;
+        background-color: $primary-color;
+        border: 1px solid $main-color-1;
+        transition: 0.2s all ease-in-out;
+
+        svg {
+          path {
+            transition: 0.2s all ease-in-out;
+          }
+        }
+
+        &:hover {
+          transition: 0.2s all ease-in-out;
+          border: 1px solid $main-color-2;
+          color: $main-color-2;
+
+          svg {
+            path {
+              transition: 0.2s all ease-in-out;
+              stroke: $main-color-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ANOTHER SIZERS , RESPONSIVE.
+
+@media only screen and (max-width: 1096px) {
+  .about {
+    flex-direction: column-reverse;
+    padding-bottom: 5rem;
+
+    .text-box {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .about {
+    .avatar-box {
+      border: 1px solid $main-color-2;
+
+      .design-square {
+        width: 15rem;
+        height: 15rem;
+
+        .avatar {
+          border: 1px solid $main-color-2;
+          top: 1rem;
+          left: 1rem;
+
+          img {
+            width: 15rem;
+            height: 15rem;
+          }
+        }
+      }
+    }
+    .text-box {
+      .button-box {
+        .see-more {
+          font-size: 0.9rem;
+          width: 9.35rem;
+          height: 2.37rem;
+        }
+      }
+    }
+  }
+}
