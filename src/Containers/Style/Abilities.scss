@@ -82,6 +82,10 @@
         align-items: center;
         gap: 2rem;
 
+        .work-path{
+            text-decoration: none;
+        }
+
         .find-more{
             display: flex;
             justify-content: center;

@@ -20,17 +20,17 @@ const Header = () => {
         <div className="social-box">
           <div className="social-media">
             <div className="gh-box">
-              <a href="https://www.google.com" className="lnk">
+              <a href="https://www.github.com/proAmethyst" className="lnk">
                 <img alt="gh" src={gh} />
               </a>
             </div>
             <div className="lki-box">
-              <a href="https://www.google.com" className="lnk">
+              <a href="https://www.linkedin.com/in/mihai-profir-5b208b252/" className="lnk">
                 <img alt="lki" src={lki} />
               </a>
             </div>
             <div className="insta-box">
-              <a href="https://www.google.com" className="lnk">
+              <a href="https://instagram.com/profirmihai?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" className="lnk">
                 <img alt="insta" src={insta} />
               </a>
             </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./Style/Abilities.scss";
+import { Link } from "react-router-dom";
 
 const Abilities = () => {
 
@@ -117,20 +118,23 @@ return (
                 <div className="btn-text">
                     You can find more here
                 </div>
-                <button className="find-more">
-                    Find More
-                    <svg fill="none" 
-                                height="48" 
-                                viewBox="0 0 48 48" 
-                                width="48" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m21 19 5.25 5-5.25 5" 
-                                        stroke="rgba(255, 255, 255, 0.80)" 
-                                        strokeLinecap="round" 
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"/>
-                    </svg>
 
-                </button>
+                <Link to="/work" className='work-path' >
+                    <button className="find-more">
+                        Find More
+                        <svg fill="none" 
+                                    height="48" 
+                                    viewBox="0 0 48 48" 
+                                    width="48" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m21 19 5.25 5-5.25 5" 
+                                            stroke="rgba(255, 255, 255, 0.80)" 
+                                            strokeLinecap="round" 
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"/>
+                        </svg>
+
+                    </button>
+                </Link>
             </div>
 
         </div>
