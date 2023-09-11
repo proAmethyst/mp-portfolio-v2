@@ -1,0 +1,24 @@
+@import './src/variables.scss';
+@import './src/animations.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    background-color: $primary-color;
+    font-family: $fira-code;
+    
+    .text{
+        padding: $padding-all;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 4rem;
+    }
+}
