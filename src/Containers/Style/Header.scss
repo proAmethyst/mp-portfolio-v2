@@ -52,17 +52,21 @@
       gap: 17.7vw;
       padding: 2rem 0;
 
-      img {
+      svg{
+        width: 35px;
         transition: 0.2s all ease-in-out;
 
         &:hover {
-          transition: 0.2s all ease-in-out;
-          filter: invert(54%) sepia(86%) saturate(420%) hue-rotate(8deg)
-            brightness(106%) contrast(107%);
+
+          path{
+            transition: 0.2s all ease-in-out;
+            fill: $main-color-2;
+          }
         }
       }
     }
   }
+  
   .buffer1,
   .buffer2 {
     height: 6vh;
