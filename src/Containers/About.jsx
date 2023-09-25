@@ -2,7 +2,7 @@ import React from "react";
 import "./Style/About.scss";
 import me from "../Assets/this-is-me.jpeg";
 import { Link } from "react-router-dom";
-
+import Square from "../Components/Square";
 const About = () => {
   return (
     <div>
@@ -13,11 +13,16 @@ const About = () => {
               <img src={me} alt="me" />
             </div>
           </div>
+          <div className="text-box-1">
+            <div className="title-box">About Me</div>
+            <div className="name-box">Mihai PROFIR</div>
+          </div>
+
+          <Square className="moveSquare" />
         </div>
+        
 
         <div className="text-box">
-          <hr />
-          <div className="title-box">About Me</div>
 
           <div className="content-box">
             I am an ambitious person, open at all what means new, friendly and

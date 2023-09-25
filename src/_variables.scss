@@ -1,5 +1,5 @@
 //imports
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
 
 // theme colors
 $primary-color: #393E46;
@@ -12,6 +12,7 @@ $main-color-2: rgba(231, 177, 10, 0.8);
 
 //text-fonts
 $fira-code:'Fira Code', monospace;
+$roboto: 'Roboto', sans-serif;
 
 //paddings
 $padding-all:clamp(1rem, -0.24593rem + 5.246vw, 5rem);

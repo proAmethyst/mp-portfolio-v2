@@ -5,20 +5,27 @@
   font-family: $fira-code;
   background: $secondary-color;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: $padding-all;
-  gap: 4rem;
+  gap: 3vw;
 
   .avatar-box {
-    border: 2px solid $main-color-2;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+    
     .design-square {
+      border: 2px solid $main-color-2;
       position: relative;
       background-color: $primary-color;
-      width: 45vw;
-      height: 45vw;
+      width: 15rem;
+      height: 15rem;
 
       .avatar {
         position: absolute;
@@ -27,9 +34,33 @@
         left: 2rem;
 
         img {
-          width: 45vw;
-          height: 45vw;
+          width: 15rem;
+          height: 15rem;
         }
+      }
+    }
+
+    .text-box-1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+
+      .title-box {
+        font-size: 1rem;
+        font-size: clamp(0.7rem, 0rem + 5vw, 1.4rem);
+        color: $main-color-1;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 300;
+      }
+    
+      .name-box{
+        font-size: 1rem;
+        font-size: clamp(1.5rem, 0rem + 5vw, 3rem);
+        color: $main-color-2;
+        font-family: $roboto;
+        font-weight: 500;
       }
     }
   }
@@ -37,21 +68,8 @@
   .text-box {
     display: flex;
     flex-direction: column;
-    gap: 6vw;
+    gap: 2vw;
     padding-top: 1.7rem;
-    hr {
-      border: 1px solid $main-color-2;
-      width: 100%;
-    }
-
-    .title-box {
-      font-size: 1rem;
-      font-size: clamp(2rem, 0rem + 5vw, 3.4rem);
-      color: $main-color-2;
-      text-transform: uppercase;
-      letter-spacing: 9.6px;
-      font-weight: 300;
-    }
 
     .content-box {
       text-align: justify;
@@ -108,7 +126,7 @@
 
 @media only screen and (max-width: 1096px) {
   .about {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-bottom: 5rem;
 
     .text-box {
@@ -118,17 +136,34 @@
   }
 }
 
+@media only screen and (max-width: 1060px) {
+  .about {
+    align-items: center;
+
+    .avatar-box {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 510px) {
   .about {
+    align-items: center;
+
     .avatar-box {
-      border: 1px solid $main-color-2;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
 
       .design-square {
         width: 15rem;
         height: 15rem;
 
         .avatar {
-          border: 1px solid $main-color-2;
           top: 1rem;
           left: 1rem;
 

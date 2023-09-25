@@ -9,6 +9,7 @@ const Work = () => {
         <div className="text">
           <div className="cs-text">Work page is <br/> coming soon...</div>
         </div>
+        {/* <Square /> */}
         <Footer />
       </div>
     </div>
