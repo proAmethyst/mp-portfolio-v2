@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <div>
       <div className="home">
+        <div className="bk-shape"></div>
         <div className="buffer1"></div>
         <div className="text-box">
           <div className="main-title-1">I'm Profir Mihai</div>

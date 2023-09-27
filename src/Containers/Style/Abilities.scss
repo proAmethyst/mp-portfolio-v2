@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     padding: $padding-all;
+    background: rgb(2,10,51);
+    background: linear-gradient(35deg, rgba(2,10,51,1) 0%, rgba(71,30,124,1) 100%);
 
     .title-box{
         display: flex;
@@ -16,14 +18,17 @@
         align-items: center;
 
         .upper-subtitle{
-            letter-spacing: 9px;
+            letter-spacing: 5px;
             color: $main-color-2;
             font-size: 1rem;
             font-size: clamp(0.5rem, 0rem + 3vw, 1.3rem);
+            font-family: $roboto !important;
         }
 
         .title{
             text-transform: uppercase;
+            font-family: $roboto !important;
+            font-weight: 500;
             font-size: 1rem;
             font-size: clamp(2rem, 0rem + 5vw, 2.5rem);
             letter-spacing: 9px;

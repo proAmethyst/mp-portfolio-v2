@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div>
       <div className="about">
+        <div className="bk-shape"></div>
         <div className="avatar-box">
           <div className="design-square">
             <div className="avatar">

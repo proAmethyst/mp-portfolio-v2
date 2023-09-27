@@ -4,36 +4,50 @@
 .home {
   padding-left: $padding-left;
   padding-right: $padding-right;
-  background-color: $primary-color;
-  background-image: url(../../Assets/hpbackground.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: right;
-  background-blend-mode: lighten;
+  background: rgb(2,10,51);
+  background: linear-gradient(135deg, rgba(2,10,51,1) 0%, rgba(71,30,124,1) 100%);
   font-family: $fira-code;
+  position: relative;
+  overflow: hidden;
+
+  .bk-shape{
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    background-color: $main-color-2;
+    filter: blur(10rem);
+    top: 70%;
+    left: 70%;
+    z-index: 1;
+  }
 
   .text-box {
+    position: relative;
     padding-top: 12rem;
     padding-bottom: 12rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    z-index: 2;
   }
 
   .main-title-1,
   .main-title-2 {
     font-size: 1rem;
     font-size: clamp(3rem, 0rem + 5vw, 6rem);
-    font-weight: 300;
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
   }
 
   .main-title-1 {
     color: $main-color-1;
+    font-weight: 300;
   }
 
   .main-title-2 {
     color: $main-color-2;
     letter-spacing: 9.6px;
+    text-transform: uppercase;
+    font-family: $roboto;
   }
 
   .subtitle {
@@ -46,6 +60,8 @@
   }
 
   .social-box {
+    position: relative;
+    z-index: 2;
     .social-media {
       display: flex;
       flex-direction: row;
@@ -88,17 +104,13 @@
 
 @media only screen and (max-width: 600px) {
   .home {
-    background-image: url(../../Assets/another.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-blend-mode: multiply;
     .text-box {
       padding-top: 13rem;
       padding-bottom: 13rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
     .main-title-2 {
       letter-spacing: 5px;

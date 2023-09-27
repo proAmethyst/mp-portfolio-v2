@@ -10,7 +10,8 @@
 }
 
 .container{
-    background-color: $primary-color;
+    background: rgb(2,10,51);
+    background: linear-gradient(45deg, rgba(2,10,51,1) 0%, rgba(71,30,124,1) 100%);
     font-family: $fira-code;
     
     .text{

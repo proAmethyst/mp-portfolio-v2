@@ -6,6 +6,8 @@
 .footer{
     display: flex;
     flex-direction: column;
+    background: rgb(2,10,51);
+    background: linear-gradient(15deg, rgba(2,10,51,1) 0%, rgba(71,30,124,1) 100%);
     flex-wrap: wrap;
     justify-content: center;
     font-family: $fira-code;
@@ -23,12 +25,15 @@
             color: $main-color-2;
             font-size: 1rem;
             font-size: clamp(0.5rem, 0rem + 3vw, 1.3rem);
+            font-family: $roboto !important;
         }
 
         .title{
             font-size: 1rem;
             font-size: clamp(2rem, 0rem + 5vw, 2.5rem);
             letter-spacing: 9px;
+            font-family: $roboto !important;
+            font-weight: 500;
             text-transform: uppercase;
         }
 

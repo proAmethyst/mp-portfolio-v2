@@ -5,12 +5,13 @@
 // WORK PREVIEW
 .work{
     padding: $padding-all;
-    background-color: $secondary-color;
+    background: rgb(2,10,51);
+    background: linear-gradient(160deg, rgba(2,10,51,1) 0%, rgba(71,30,124,1) 100%);
     text-align: center;
 
     .title-box{
         padding: 2rem;
-        font-family: $fira-code;
+        font-family: $roboto;
         display: flex;
         flex-direction: column;
         gap:1rem;
@@ -23,6 +24,7 @@
         }
 
         .title{
+            font-weight: 500;
             font-size: 1rem;
             font-size: clamp(2rem, 0rem + 5vw, 2.5rem);
             letter-spacing: 9px;
