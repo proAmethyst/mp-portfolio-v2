@@ -4,7 +4,6 @@
 .about {
   font-family: $fira-code;
   position: relative;
-  // background: $secondary-color;
   background: rgb(2,10,51);
   background: linear-gradient(45deg, rgba(2,10,51,1) 0%, rgba(71,30,124,1) 100%);
   display: flex;
@@ -38,17 +37,16 @@
     z-index: 2;
     
     .design-square {
-      border: 2px solid $main-color-2;
       position: relative;
-      background-color: $primary-color;
+      background-color: $secondary-color;
       width: 15rem;
       height: 15rem;
 
       .avatar {
         position: absolute;
-        border: 2px solid $main-color-2;
-        top: 2rem;
-        left: 2rem;
+        top: 1.5rem;
+        left: 1.5rem;
+
 
         img {
           width: 15rem;
@@ -94,7 +92,7 @@
       text-align: justify;
       font-weight: 300;
       font-size: 1rem;
-      font-size: clamp(0.5rem, 0rem + 3vw, 1.2rem);
+      font-size: clamp(0.8rem, 0rem + 3vw, 1.2rem);
     }
 
     .button-box {
@@ -113,9 +111,9 @@
         width: 14.35rem;
         height: 4.37rem;
         cursor: pointer;
-        background: rgb(2,10,51);
-        background: linear-gradient(45deg, rgba(2,10,51,1) 0%, rgba(71,30,124,1) 100%);
-        border: 1px solid $main-color-1;
+        background-color: $secondary-color;
+        border: 1px solid transparent;
+        border-radius: 5px;
         transition: 0.2s all ease-in-out;
         text-decoration: none;
 
@@ -166,6 +164,12 @@
       align-items: center;
       gap: 4rem;
     }
+
+    .text-box {
+      .button-box {
+        padding-top: 2rem;
+      }
+    }
   }
 }
 
@@ -191,6 +195,11 @@
             width: 15rem;
             height: 15rem;
           }
+        }
+      }
+      .text-box-1{
+        .title-box{
+          text-align: center;
         }
       }
     }

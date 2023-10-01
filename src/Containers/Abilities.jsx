@@ -50,21 +50,7 @@ return (
 
             <div ref={ref} className="skills-box">
 
-                <div className="wrapper-test">
-                    <div className="skill-1 skill">
-                        <svg viewBox="0 0 512 512" 
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="78"
-                            className="rotate1">
-                            <path d="m136.6 138.79a64.003 64.003 0 0 0 -43.31 41.35l-93.29 279.86 14.69 14.69 150.11-150.11c-2.99-6.26-4.8-13.18-4.8-20.58 0-26.51 21.49-48 48-48s48 21.49 48 48-21.49 48-48 48c-7.4 0-14.32-1.81-20.58-4.8l-150.11 150.11 14.69 14.69 279.86-93.29a64.003 64.003 0 0 0 41.35-43.31l42.79-151.4-128-128zm361.34-64.62-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.75 18.75-49.15 0-67.91z"
-                                fill="#ffffff"/>
-                        </svg>
-                        <div className="skill-text">Web Design</div>
-                    </div>
-                    <div className="short-description">Beginner</div>
-                </div>
-
-                <div className="wrapper-test">
+                <div className="wrapper">
                     <div className="skill-2 skill">
                         <svg viewBox="0 0 256 256" 
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,13 +59,12 @@ return (
                             <path d="m71.68213 97.21875-36.9375 30.78125 36.9375 30.78125a12 12 0 0 1 -15.36426 18.4375l-48-40a12.00005 12.00005 0 0 1 0-18.4375l48-40a12 12 0 1 1 15.36426 18.4375zm176 21.5625-48-40a12 12 0 1 0 -15.36426 18.4375l36.9375 30.78125-36.9375 30.78125a12 12 0 0 0 15.36426 18.4375l48-40a12.00005 12.00005 0 0 0 0-18.4375zm-83.58106-90.05859a12.0021 12.0021 0 0 0 -15.37841 7.17675l-64 176a11.99972 11.99972 0 1 0 22.55468 8.20118l64-176a11.99923 11.99923 0 0 0 -7.17627-15.37793z"
                                 fill="#ffffff"/>
                         </svg>
-                        <div className="skill-text">Web Development</div>
+                        <div className="skill-text">Frontend Development</div>
                     </div>
-                    <div className="short-description">Beginner</div>
+                    <div className="short-description"> Your vision implemented<br/>with our code</div>
                 </div>
 
-
-                <div className="wrapper-test">
+                <div className="wrapper">
                     <div className="skill-3 skill">
                         <svg height="100" 
                                 viewBox="0 0 24 24" 
@@ -90,13 +75,12 @@ return (
                                 fill="#ffffff"
                                 />
                         </svg>
-                        <div className="skill-text">Stylish</div>
+                        <div className="skill-text">Styling</div>
                     </div>
-                    <div className="short-description">Beginner</div>
+                    <div className="short-description">You can choose from a multitude<br/>of styling frameworks</div>
                 </div>
 
-
-                <div className="wrapper-test">
+                <div className="wrapper">
                     <div className="skill-4 skill">
                         <svg height="88"
                                 viewBox="0 0 32 32"
@@ -106,11 +90,27 @@ return (
                                     fill="#ffffff"
                             />
                         </svg>
-                        <div className="skill-text">Web App</div>
+                        <div className="skill-text">Web Application</div>
                     </div>
-                    <div className="short-description">Beginner</div>
+                    <div className="short-description">Maybe you'll need a Web app<br/>not just an website</div>
                 </div>
+
+                <div className="wrapper">
+                    <div className="skill-1 skill">
+                        <svg viewBox="0 0 512 512" 
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="78"
+                            className="rotate1">
+                            <path d="m136.6 138.79a64.003 64.003 0 0 0 -43.31 41.35l-93.29 279.86 14.69 14.69 150.11-150.11c-2.99-6.26-4.8-13.18-4.8-20.58 0-26.51 21.49-48 48-48s48 21.49 48 48-21.49 48-48 48c-7.4 0-14.32-1.81-20.58-4.8l-150.11 150.11 14.69 14.69 279.86-93.29a64.003 64.003 0 0 0 41.35-43.31l42.79-151.4-128-128zm361.34-64.62-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.75 18.75-49.15 0-67.91z"
+                                fill="#ffffff"/>
+                        </svg>
+                        <div className="skill-text">Web Design</div>
+                    </div>
+                    <div className="short-description">We can also create <br/> a design for you</div>
+                </div>
+
             </div>
+
 
 
 

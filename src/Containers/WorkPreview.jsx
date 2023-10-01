@@ -11,9 +11,11 @@ const WorkPreview = () => {
           <div className="upper-title">A small collection</div>
           <div className="title">Part of our work</div>
         </div>
-
+        
+        <div className="carousel">
+          <Carousel />
+        </div>
         {/* <Carousel gallery/> */}
-        <Carousel />
 
       </div>
     </div>

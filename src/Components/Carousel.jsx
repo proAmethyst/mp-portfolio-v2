@@ -1,5 +1,6 @@
 import React from 'react';
 import './Style/flickity.css';
+import './Style/Carousel.scss';
 import Flickity from 'react-flickity-component';
 import pic1 from '../Assets/1.1.png';
 import pic2 from '../Assets/1.2.png';
@@ -25,15 +26,33 @@ function Carousel() {
       reloadOnUpdate // default false
       static // default false
     >
-      <img alt='img1' src={pic1} />
-      <img alt='img2' src={pic2} />
-      <img alt='img3' src={pic3} />
-      <img alt='img3' src={pic4} />
-      <img alt='img3' src={pic5} />
-      <img alt='img3' src={pic6} />
-      <img alt='img3' src={pic7} />
-      <img alt='img3' src={pic8} />
-      <img alt='img3' src={pic9} />
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic1} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic2} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic3} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic4} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic5} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic6} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic7} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic8} />
+      </div>
+      <div class="carousel-cell">
+      <img alt='img-ex' src={pic9} />
+      </div>
     </Flickity>
   )
 }

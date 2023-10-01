@@ -3,6 +3,7 @@ import "./Style/About.scss";
 import me from "../Assets/this-is-me.jpeg";
 import { Link } from "react-router-dom";
 import Square from "../Components/Square";
+
 const About = () => {
   return (
     <div>
